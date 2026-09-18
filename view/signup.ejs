@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: cursive ;
+            
+            background-color: grey;
+            color:white
+        }
+        form div {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        form label {
+            width: 100px;
+        }
+
+        form input,
+        form select {
+            width: 300px;
+        }
+
+    </style>
+    </head>
+<body>
+    <h1>signup</h1>
+    <form action="/user" method="post">
+        <div>
+        <label>Full Name</label>
+            <input type="text" required name="name"/>
+            </div>
+        <div>
+        <label>email</label>
+        <input type="text" required name="email"/>
+        </div>
+        <div>
+        <label>password</label>
+        <input type="password" required name="password"/>
+        </div>
+        <div>
+        <label>gender</label>
+        <select id="gender" name="gender" required>
+       <option value="">Select Gender</option>
+       <option value="Male">Male</option>
+       <option value="Female">Female</option>
+       <option value="Other">Other</option>
+       </select>
+       </div>
+        <button type="submit">signup</button>
+    </form>
+   
+</body>
+</html>
